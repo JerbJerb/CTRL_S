@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Mar 13 02:12:00 2021
-
-@author: J
-"""
 import time
 import cv2
 import numpy as np
@@ -20,7 +14,7 @@ class ObjectDetection:
             self.CLASSES = [line.strip() for line in f.readlines()]
 
         self.OUTPUT_LAYERS = [self.MODEL.getLayerNames()[i[0] - 1] for i in self.MODEL.getUnconnectedOutLayers()]
-        self.COLORS = np.random.randint(0, 255, size=(len(self.CLASSES), 3))
+        self.COLORS = np.random.uniform(0, 255, size=(len(self.CLASSES), 3))
         self.COLORS /= (np.sum(self.COLORS**2, axis=1)**0.5/255)[np.newaxis].T
 
     def detectObj(self, snap):

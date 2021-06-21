@@ -2,6 +2,8 @@
 
 Web application for _real-time_ object detection on video streaming via web browser.
 
+![layout](_source/layout.jpg)
+
 ## Installation
 
 Create and activate an virtual environment, as follows:
