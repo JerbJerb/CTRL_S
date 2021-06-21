@@ -8,10 +8,11 @@ __pycache__/
 
 ### VSCode ###
 .vscode/
+.vs
 
 ### Virtual Environment ###
 env/
-
+venv/
 ### Metadata ###
 camera_settings.log
 

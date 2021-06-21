@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Mar 25 05:39:00 2021
+
+@author: J
+"""
 from flask import Flask, render_template, request, Response, redirect, url_for
 from flask_bootstrap import Bootstrap
 
@@ -14,7 +20,7 @@ VIDEO = VideoStreaming()
 cv2.destroyAllWindows()
 
 
-@application.route('/templates')
+@application.route('/')
 def home():
     TITLE = 'CTRL + S: Real Time Monitoring'
     return render_template('index.html', TITLE=TITLE)
