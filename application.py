@@ -17,7 +17,7 @@ cv2.destroyAllWindows()
 @application.route('/templates')
 def home():
     TITLE = 'CTRL + S: Real Time Monitoring'
-    return render_template('index.html', TITLE=TITLE)
+    return render_template('/index.html', TITLE=TITLE)
 
 
 @application.route('/video_feed')
