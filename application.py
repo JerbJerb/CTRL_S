@@ -7,12 +7,9 @@ Created on Sun Mar 25 05:39:00 2021
 from flask import Flask, render_template, request, Response, redirect, url_for
 from flask_bootstrap import Bootstrap
 
-import os
-import cv2
-import time
-import numpy as np
-from object_detection import VideoStreaming
-from camera_settings import check_settings
+from object_detection import *
+from camera_settings import *
+
 
 application = Flask(__name__)
 Bootstrap(application)
