@@ -1,1 +1,1 @@
-web: gunicorn awit.wsgi
+web: gunicorn app:application --preload
