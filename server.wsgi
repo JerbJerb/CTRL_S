@@ -1,1 +1,0 @@
-gunicorn app:application --max-requests 1200
