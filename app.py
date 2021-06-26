@@ -10,9 +10,9 @@ from flask_bootstrap import Bootstrap
 from object_detection import *
 from camera_settings import *
 
-
-application = Flask(__name__)
-Bootstrap(application)
+if __name__ == "__main__":
+    application = Flask(__name__)
+    Bootstrap(application)
 
 
 check_settings()
