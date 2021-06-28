@@ -13,6 +13,7 @@ from camera_settings import *
 
 application = Flask(__name__)
 Bootstrap(application)
+application.run(debug=True)
 
 
 check_settings()
